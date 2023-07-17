@@ -10,7 +10,7 @@ public class CurrentAccount : BankAccount
 
     public CurrentAccount(float overdraftLimit) 
     {
-        OverdraftLimity = overdraftLimit;
+        OverdraftLimit = overdraftLimit;
     }
 
     public void Withdraw(float amount)
