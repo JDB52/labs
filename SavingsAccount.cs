@@ -8,7 +8,7 @@ public class SavingsAccount : BankAccount
 {
     public float InterestRate{ get; set; }
 
-    public SavingsAccount(float customerName)
+    public SavingsAccount(string customerName)
     {
         InterestRate = 1.5;
     }
