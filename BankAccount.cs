@@ -16,7 +16,21 @@ using System.Threading.Tasks;
     public BankAccount(string customerName) { 
 
         CustomerName = customerName;
-        AccountNumber =
+        AccountNumber = nextAccountNumber
         Balance = 0;
     }
+
+    public void Deposit (float amount) {
+        Balance += amount;
+    }
+
+    public void Withdraw(float amount)
+    {
+        Balance -= amount;
+    }
+
+    public static int nextAccountNumber() { 
+     return newAccountNumber++;
+    }
+
 }
